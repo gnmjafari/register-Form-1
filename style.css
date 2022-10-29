@@ -1,0 +1,103 @@
+body{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 127, 245);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.holder{
+    background-color: white;
+    padding-bottom: 30px;
+    
+}
+
+.boxinput{
+    position: relative;
+    margin: 30px 48px;
+}
+
+.boxinput input{
+    border: 0;
+    color: black;
+    box-shadow: rgba(17, 17, 26, 0.501) 0px 1px 0px;
+    padding: 10px;
+    outline: none;
+}
+
+.boxinput span{
+    position: absolute;
+    left: 0;
+    padding: 5px;
+    pointer-events: none;
+    color: gray;
+    text-transform: uppercase;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.boxinput input:valid ~ span,
+.boxinput input:focus ~ span
+{
+    color: rgb(27, 36, 121);
+    transform: translateX(10px) translateY(-10px);
+    font-size: 15px;
+    padding: 0 10px;
+    border-left: 1px solid rgb(44, 58, 180) ;
+    border-right: 1px solid rgb(44, 58, 180) ;
+}
+
+#submit{
+    background-color: rgb(0, 167, 0);
+    color: white;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
+    margin-left: 48px;
+}
+
+.holderbirthgen{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    
+}
+
+img{
+    width: 550px;
+    height: 200px;
+    margin-bottom: 40px;
+}
+
+.holder h1{
+    margin-left: 48px;
+}
+
+.select{
+    box-shadow: rgba(17, 17, 26, 0.501) 0px 1px 0px;
+}
+
+select{
+    border: 0;
+    padding: 10px;
+    width: 130px;
+    
+    
+}
+
+.select span{
+    color: gray;
+   
+}
+
+.boxbirthday input{
+    width: 200px;
+}
